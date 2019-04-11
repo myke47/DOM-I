@@ -41,7 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-// Text added to Nav
+// nav text inserted
 let myALinks = document.getElementsByTagName('a');
 myALinks[0].textContent = 'Services';
 myALinks[1].textContent = 'Product';
@@ -55,15 +55,15 @@ let ctaImage = document.getElementById('cta-img');
 ctaImage.setAttribute('src', siteContent['cta']['img-src']);
 ctaImage.setAttribute('alt', 'Image of a code snippet.');
 
-// What is the button saying
+//the cta button says
 let ctaBtn = document.querySelector('button');
 ctaBtn.textContent = siteContent['cta']['button'];
 
-// Where is my H1
+// the cta h1 says
 let ctaHone = document.querySelector('h1');
 ctaHone.textContent = siteContent['cta']['h1'];
 
-// What do the h4, p content items say
+// main-content, top-content
 let featureHfour = document.querySelector('div:nth-child(1) > h4');
 featureHfour.textContent = siteContent['main-content']['features-h4'];
 
@@ -76,13 +76,13 @@ aboutHfour.textContent = siteContent['main-content']['about-h4'];
 let pAbout = document.querySelector('div:nth-child(2) > p');
 pAbout.textContent = siteContent['main-content']['about-content'];
 
-// middle image placement
+// middle image src & alt
 let midImg = document.getElementById('middle-img')
 midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 midImg.setAttribute('alt', 'Image of code snippets across the screen');
 
-// bottom content elements, h4, p
-// let servicesHfour = document.querySelector('body > div > section.main-content > div.bottom-content > div:nth-child(1) > h4')
+//main-content, bottom-content
+//FULL PATH = let servicesHfour = document.querySelector('body > div > section.main-content > div.bottom-content > div:nth-child(1) > h4')
 let servicesHfour = document.querySelector('div.bottom-content > div:nth-child(1) > h4');
 servicesHfour.textContent = siteContent['main-content']['services-h4'];
 
@@ -101,4 +101,23 @@ visionHfour.textContent = siteContent['main-content']['vision-h4'];
 let pVision = document.querySelector('div.bottom-content > div:nth-child(3) > p');
 pVision.textContent = siteContent['main-content']['vision-content'];
 
+// contact information
+// document.querySelector('body > div > section.contact > h4')
+// body > div > section.contact > h4
+// document.querySelector('body > div > section.contact > p:nth-child(2)')
 
+let contactI = document.querySelector('div > section.contact > h4');
+contactI.textContent = siteContent['contact']['contact-h4'];
+
+let contactP = document.querySelector('section.contact > p:nth-child(2)');
+contactP.textContent = siteContent['contact']['address'];
+
+let contactP2 = document.querySelector('section.contact > p:nth-child(3)');
+contactP2.textContent = siteContent['contact']['phone'];
+
+let contactP3 = document.querySelector('section.contact > p:nth-child(4)');
+contactP3.textContent = siteContent['contact']['email'];
+
+// footer content
+let footInfo = document.querySelector('section.footer > p');
+footInfo.textContent = siteContent['footer']['copyright'];
