@@ -75,3 +75,30 @@ aboutHfour.textContent = siteContent['main-content']['about-h4'];
 
 let pAbout = document.querySelector('div:nth-child(2) > p');
 pAbout.textContent = siteContent['main-content']['about-content'];
+
+// middle image placement
+let midImg = document.getElementById('middle-img')
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+midImg.setAttribute('alt', 'Image of code snippets across the screen');
+
+// bottom content elements, h4, p
+// let servicesHfour = document.querySelector('body > div > section.main-content > div.bottom-content > div:nth-child(1) > h4')
+let servicesHfour = document.querySelector('div.bottom-content > div:nth-child(1) > h4');
+servicesHfour.textContent = siteContent['main-content']['services-h4'];
+
+let pServices = document.querySelector('div.bottom-content > div:nth-child(1) > p');
+pServices.textContent = siteContent['main-content']['services-content'];
+
+let productHfour = document.querySelector('div.bottom-content > div:nth-child(2) > h4');
+productHfour.textContent = siteContent['main-content']['product-h4'];
+
+let pProduct = document.querySelector('div.bottom-content > div:nth-child(2) > p');
+pProduct.textContent = siteContent['main-content']['product-content'];
+
+let visionHfour = document.querySelector('div:nth-child(3) > h4');
+visionHfour.textContent = siteContent['main-content']['vision-h4'];
+
+let pVision = document.querySelector('div.bottom-content > div:nth-child(3) > p');
+pVision.textContent = siteContent['main-content']['vision-content'];
+
+
