@@ -50,6 +50,23 @@ myALinks[3].textContent = 'Features';
 myALinks[4].textContent = 'About';
 myALinks[5].textContent = 'Contact';
 
+// nav color
+const navColor = document.querySelectorAll('a')
+navColor.forEach(function (element) {
+  element.style.color = 'green'
+})
+
+// appending & prepending child elements to nav
+let newNav1 = document.createElement('a');
+newNav1.textContent = 'First'
+newNav1.style.color = 'blue';
+let newNav2 = document.createElement('a');
+newNav2.textContent = 'Last'
+newNav2.style.color = 'red'
+let navMenu = document.getElementsByTagName('nav')[0];
+navMenu.prepend(newNav1);
+navMenu.appendChild(newNav2);
+
 // cta img src & alt
 let ctaImage = document.getElementById('cta-img');
 ctaImage.setAttribute('src', siteContent['cta']['img-src']);
@@ -62,6 +79,7 @@ ctaBtn.textContent = siteContent['cta']['button'];
 // the cta h1 says
 let ctaHone = document.querySelector('h1');
 ctaHone.textContent = siteContent['cta']['h1'];
+ctaHone.style.whiteSpace = 'wrap';
 
 // main-content, top-content
 let featureHfour = document.querySelector('div:nth-child(1) > h4');
@@ -121,3 +139,7 @@ contactP3.textContent = siteContent['contact']['email'];
 // footer content
 let footInfo = document.querySelector('footer > p');
 footInfo.textContent = siteContent['footer']['copyright'];
+
+// nav style color
+// let navColor = document.getElementsByTagName('a');
+// navColor.style = color('green');
