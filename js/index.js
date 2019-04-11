@@ -119,5 +119,5 @@ let contactP3 = document.querySelector('section.contact > p:nth-child(4)');
 contactP3.textContent = siteContent['contact']['email'];
 
 // footer content
-let footInfo = document.querySelector('section.footer > p');
+let footInfo = document.querySelector('footer > p');
 footInfo.textContent = siteContent['footer']['copyright'];
