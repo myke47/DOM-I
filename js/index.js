@@ -69,3 +69,9 @@ featureHfour.textContent = siteContent['main-content']['features-h4'];
 
 let pFeatures = document.querySelector('div:nth-child(1) > p');
 pFeatures.textContent = siteContent['main-content']['features-content'];
+
+let aboutHfour = document.querySelector('div:nth-child(2) > h4');
+aboutHfour.textContent = siteContent['main-content']['about-h4'];
+
+let pAbout = document.querySelector('div:nth-child(2) > p');
+pAbout.textContent = siteContent['main-content']['about-content'];
