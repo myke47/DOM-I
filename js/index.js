@@ -54,3 +54,18 @@ myALinks[5].textContent = 'Contact';
 let ctaImage = document.getElementById('cta-img');
 ctaImage.setAttribute('src', siteContent['cta']['img-src']);
 ctaImage.setAttribute('alt', 'Image of a code snippet.');
+
+// What is the button saying
+let ctaBtn = document.querySelector('button');
+ctaBtn.textContent = siteContent['cta']['button'];
+
+// Where is my H1
+let ctaHone = document.querySelector('h1');
+ctaHone.textContent = siteContent['cta']['h1'];
+
+// What do the h4, p content items say
+let featureHfour = document.querySelector('div:nth-child(1) > h4');
+featureHfour.textContent = siteContent['main-content']['features-h4'];
+
+let pFeatures = document.querySelector('div:nth-child(1) > p');
+pFeatures.textContent = siteContent['main-content']['features-content'];
